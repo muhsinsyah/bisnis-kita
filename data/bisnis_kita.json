@@ -1,0 +1,654 @@
+{
+  "businesses": [
+    {
+      "id": "biz-demo-001",
+      "name": "Warung Rasa Nusantara",
+      "tagline": "Citarasa Kuliner Tradisional & Kopi Pilihan",
+      "logoUrl": "/src/assets/images/logo_bisnis_kita_1792863234751.jpg",
+      "address": "Jl. Malioboro No. 45, Yogyakarta",
+      "phone": "0812-3456-7890",
+      "currency": "IDR",
+      "timezone": "Asia/Jakarta",
+      "taxRate": 10,
+      "serviceFeeRate": 0,
+      "receiptHeader": "WARUNG RASA NUSANTARA\nJl. Malioboro No. 45 Yogyakarta\nTelp: 0812-3456-7890",
+      "receiptFooter": "Terima Kasih atas Kunjungan Anda!\nSemoga Hari Anda Menyenangkan.",
+      "minStockAlertDefault": 5,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-owner-001",
+      "businessId": "biz-demo-001",
+      "username": "owner_demokuliner",
+      "passwordHash": "$2b$10$p6cKlGDvP6MDNAm71vybQubXpqdAB7BpM5LTE3daXg8YGxTafpk1W",
+      "fullName": "Budi Santoso",
+      "email": "owner@rasanusantara.id",
+      "phone": "081234567890",
+      "role": "owner",
+      "isActive": true,
+      "temporaryPasswordChanged": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "usr-cashier-001",
+      "businessId": "biz-demo-001",
+      "username": "kasir_siti",
+      "passwordHash": "$2b$10$p6cKlGDvP6MDNAm71vybQuZlydVX086wn3HkXsl0tix.M0iDLP8Qi",
+      "fullName": "Siti Rahmawati",
+      "email": "siti@rasanusantara.id",
+      "phone": "081298765432",
+      "role": "cashier",
+      "isActive": true,
+      "temporaryPasswordChanged": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "usr-inv-001",
+      "businessId": "biz-demo-001",
+      "username": "gudang_agus",
+      "passwordHash": "$2b$10$p6cKlGDvP6MDNAm71vybQu1vo0qJSa6uw1mLZYhGc5/mFlLw5GmZe",
+      "fullName": "Agus Purnomo",
+      "email": "agus@rasanusantara.id",
+      "phone": "081377889900",
+      "role": "inventory",
+      "isActive": true,
+      "temporaryPasswordChanged": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-01",
+      "businessId": "biz-demo-001",
+      "name": "Makanan Utama",
+      "icon": "Utensils",
+      "sortOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": "cat-02",
+      "businessId": "biz-demo-001",
+      "name": "Kopi & Minuman",
+      "icon": "Coffee",
+      "sortOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": "cat-03",
+      "businessId": "biz-demo-001",
+      "name": "Camilan & Tambahan",
+      "icon": "Cookie",
+      "sortOrder": 3,
+      "isActive": true
+    }
+  ],
+  "products": [
+    {
+      "id": "prd-01",
+      "businessId": "biz-demo-001",
+      "categoryId": "cat-01",
+      "sku": "MENU-AGP",
+      "name": "Ayam Geprek Sambal Korek",
+      "description": "Ayam goreng krispi ditumbuk dengan ulekan cabai rawit merah pedas gurih, disajikan dengan lalapan segar.",
+      "imageUrl": "/src/assets/images/ayam_geprek_crispy_1792863232199.jpg",
+      "price": 24000,
+      "cost": 11500,
+      "unit": "porsi",
+      "inventoryMode": "recipe",
+      "currentStock": 0,
+      "minStock": 5,
+      "isActive": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "prd-02",
+      "businessId": "biz-demo-001",
+      "categoryId": "cat-02",
+      "sku": "MENU-KSA",
+      "name": "Kopi Susu Gula Aren Spesial",
+      "description": "Espresso blend pilihan berpadu susu segar dingin dan saus gula aren kelapa legit wangi.",
+      "imageUrl": "/src/assets/images/kopi_susu_aren_1792863233464.jpg",
+      "price": 20000,
+      "cost": 7200,
+      "unit": "cup",
+      "inventoryMode": "recipe",
+      "currentStock": 0,
+      "minStock": 5,
+      "isActive": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "prd-03",
+      "businessId": "biz-demo-001",
+      "categoryId": "cat-01",
+      "sku": "MENU-NGS",
+      "name": "Nasi Goreng Spesial Rempah",
+      "description": "Nasi goreng racikan bumbu khas dengan suwiran ayam, telur mata sapi, sate ayam, dan kerupuk.",
+      "imageUrl": "/src/assets/images/nasi_goreng_spesial_1792863234486.jpg",
+      "price": 28000,
+      "cost": 13500,
+      "unit": "porsi",
+      "inventoryMode": "recipe",
+      "currentStock": 0,
+      "minStock": 5,
+      "isActive": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "prd-04",
+      "businessId": "biz-demo-001",
+      "categoryId": "cat-01",
+      "sku": "MENU-MPD",
+      "name": "Mie Pedas Juara Level 3",
+      "description": "Mie kenyal gurih dibalut minyak cabai harum dengan taburan ayam cincang dan pangsit krispi.",
+      "imageUrl": "/src/assets/images/mie_pedas_level_1792863234002.jpg",
+      "price": 22000,
+      "cost": 9800,
+      "unit": "porsi",
+      "inventoryMode": "recipe",
+      "currentStock": 0,
+      "minStock": 5,
+      "isActive": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "prd-05",
+      "businessId": "biz-demo-001",
+      "categoryId": "cat-02",
+      "sku": "MENU-ETM",
+      "name": "Es Teh Manis Jasmine Segar",
+      "description": "Teh melati seduh segar dengan es batu melimpah dan manis alami.",
+      "imageUrl": "",
+      "price": 7000,
+      "cost": 2000,
+      "unit": "gelas",
+      "inventoryMode": "product",
+      "currentStock": 120,
+      "minStock": 20,
+      "isActive": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "prd-06",
+      "businessId": "biz-demo-001",
+      "categoryId": "cat-03",
+      "sku": "MENU-KTG",
+      "name": "Kentang Goreng Keju Barbeque",
+      "description": "Kentang krispi renyah dengan taburan bumbu barbeque dan dipping sauce keju.",
+      "imageUrl": "",
+      "price": 18000,
+      "cost": 7500,
+      "unit": "porsi",
+      "inventoryMode": "product",
+      "currentStock": 40,
+      "minStock": 10,
+      "isActive": true,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    }
+  ],
+  "productVariants": [
+    {
+      "id": "var-01",
+      "productId": "prd-01",
+      "name": "Level 1 (Sedang)",
+      "priceAdjustment": 0
+    },
+    {
+      "id": "var-02",
+      "productId": "prd-01",
+      "name": "Level 3 (Pedas Nampol)",
+      "priceAdjustment": 2000
+    },
+    {
+      "id": "var-03",
+      "productId": "prd-01",
+      "name": "Level 5 (Super Pedas)",
+      "priceAdjustment": 4000
+    },
+    {
+      "id": "var-04",
+      "productId": "prd-02",
+      "name": "Ukuran Regular (16oz)",
+      "priceAdjustment": 0
+    },
+    {
+      "id": "var-05",
+      "productId": "prd-02",
+      "name": "Ukuran Large (22oz)",
+      "priceAdjustment": 5000
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "ing-01",
+      "businessId": "biz-demo-001",
+      "sku": "BAHAN-AYAM",
+      "name": "Daging Ayam Broiler",
+      "unit": "kg",
+      "currentStock": 25.5,
+      "minStock": 5,
+      "avgCost": 35000,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "ing-02",
+      "businessId": "biz-demo-001",
+      "sku": "BAHAN-CABAI",
+      "name": "Cabai Rawit Merah",
+      "unit": "kg",
+      "currentStock": 8,
+      "minStock": 2,
+      "avgCost": 45000,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "ing-03",
+      "businessId": "biz-demo-001",
+      "sku": "BAHAN-BERAS",
+      "name": "Beras Premium Ramos",
+      "unit": "kg",
+      "currentStock": 60,
+      "minStock": 15,
+      "avgCost": 14000,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "ing-04",
+      "businessId": "biz-demo-001",
+      "sku": "BAHAN-MINYAK",
+      "name": "Minyak Goreng Sawit",
+      "unit": "liter",
+      "currentStock": 30,
+      "minStock": 10,
+      "avgCost": 16500,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "ing-05",
+      "businessId": "biz-demo-001",
+      "sku": "BAHAN-KOPI",
+      "name": "Biji Kopi House Blend Arabica",
+      "unit": "kg",
+      "currentStock": 12,
+      "minStock": 3,
+      "avgCost": 120000,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "ing-06",
+      "businessId": "biz-demo-001",
+      "sku": "BAHAN-SUSU",
+      "name": "Susu Fresh Milk UHT",
+      "unit": "liter",
+      "currentStock": 24,
+      "minStock": 6,
+      "avgCost": 19000,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "ing-07",
+      "businessId": "biz-demo-001",
+      "sku": "BAHAN-AREN",
+      "name": "Gula Aren Organik Cair",
+      "unit": "liter",
+      "currentStock": 10,
+      "minStock": 3,
+      "avgCost": 38000,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "ing-08",
+      "businessId": "biz-demo-001",
+      "sku": "BAHAN-KEMASAN",
+      "name": "Kotak Kraft Food Grade & Cup",
+      "unit": "pcs",
+      "currentStock": 350,
+      "minStock": 50,
+      "avgCost": 1200,
+      "createdAt": "2026-10-24T17:45:57.687Z",
+      "updatedAt": "2026-10-24T17:45:57.687Z"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "rcp-01",
+      "productId": "prd-01",
+      "ingredientId": "ing-01",
+      "quantityRequired": 0.25
+    },
+    {
+      "id": "rcp-02",
+      "productId": "prd-01",
+      "ingredientId": "ing-02",
+      "quantityRequired": 0.04
+    },
+    {
+      "id": "rcp-03",
+      "productId": "prd-01",
+      "ingredientId": "ing-04",
+      "quantityRequired": 0.05
+    },
+    {
+      "id": "rcp-04",
+      "productId": "prd-01",
+      "ingredientId": "ing-08",
+      "quantityRequired": 1
+    },
+    {
+      "id": "rcp-05",
+      "productId": "prd-02",
+      "ingredientId": "ing-05",
+      "quantityRequired": 0.018
+    },
+    {
+      "id": "rcp-06",
+      "productId": "prd-02",
+      "ingredientId": "ing-06",
+      "quantityRequired": 0.15
+    },
+    {
+      "id": "rcp-07",
+      "productId": "prd-02",
+      "ingredientId": "ing-07",
+      "quantityRequired": 0.03
+    },
+    {
+      "id": "rcp-08",
+      "productId": "prd-02",
+      "ingredientId": "ing-08",
+      "quantityRequired": 1
+    },
+    {
+      "id": "rcp-09",
+      "productId": "prd-03",
+      "ingredientId": "ing-03",
+      "quantityRequired": 0.18
+    },
+    {
+      "id": "rcp-10",
+      "productId": "prd-03",
+      "ingredientId": "ing-01",
+      "quantityRequired": 0.1
+    },
+    {
+      "id": "rcp-11",
+      "productId": "prd-03",
+      "ingredientId": "ing-04",
+      "quantityRequired": 0.04
+    },
+    {
+      "id": "rcp-12",
+      "productId": "prd-03",
+      "ingredientId": "ing-08",
+      "quantityRequired": 1
+    }
+  ],
+  "inventoryMovements": [],
+  "suppliers": [
+    {
+      "id": "sup-01",
+      "businessId": "biz-demo-001",
+      "name": "CV Unggas Sejahtera",
+      "contactPerson": "Pak Hendro",
+      "phone": "081122334455",
+      "address": "Pasar Giwangan Blok B-12",
+      "notes": "Pemasok ayam broiler segar setiap pagi pukul 06.00",
+      "createdAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "sup-02",
+      "businessId": "biz-demo-001",
+      "name": "Kopi Sangrai Mataram",
+      "contactPerson": "Mbak Dini",
+      "phone": "081233445566",
+      "address": "Jl. Kaliurang KM 8.5",
+      "notes": "Beans fresh roast blend arabika-robusta 70:30",
+      "createdAt": "2026-10-24T17:45:57.687Z"
+    }
+  ],
+  "purchases": [],
+  "sales": [
+    {
+      "id": "sl-001",
+      "businessId": "biz-demo-001",
+      "invoiceNumber": "INV-20261024-001",
+      "orderType": "dine_in",
+      "tableNumber": "Meja 04",
+      "customerName": "Mas Danang",
+      "subtotal": 68000,
+      "discountAmount": 0,
+      "taxAmount": 6800,
+      "serviceFeeAmount": 0,
+      "finalAmount": 74800,
+      "totalCostHPP": 30200,
+      "grossProfit": 37800,
+      "paymentMethod": "cash",
+      "amountPaid": 80000,
+      "changeAmount": 5200,
+      "status": "completed",
+      "cashierId": "usr-cashier-001",
+      "cashierName": "Siti Rahmawati",
+      "notes": "Sambal tidak terlalu berminyak",
+      "idempotencyKey": "idem-seed-1",
+      "createdAt": "2026-10-24T15:45:58.003Z",
+      "items": [
+        {
+          "id": "8ce95738-70b9-475c-9b76-ed2af18ac759",
+          "saleId": "sl-001",
+          "productId": "prd-01",
+          "productName": "Ayam Geprek Sambal Korek",
+          "variantName": "Level 3 (Pedas Nampol)",
+          "quantity": 2,
+          "unitPrice": 26000,
+          "unitCost": 11500,
+          "subtotal": 52000,
+          "costSubtotal": 23000
+        },
+        {
+          "id": "c8c11350-c3dc-472d-853b-1d8f944520d0",
+          "saleId": "sl-001",
+          "productId": "prd-05",
+          "productName": "Es Teh Manis Jasmine Segar",
+          "quantity": 2,
+          "unitPrice": 7000,
+          "unitCost": 2000,
+          "subtotal": 14000,
+          "costSubtotal": 4000
+        }
+      ]
+    },
+    {
+      "id": "sl-002",
+      "businessId": "biz-demo-001",
+      "invoiceNumber": "INV-20261024-002",
+      "orderType": "takeaway",
+      "customerName": "Kak Melati",
+      "subtotal": 48000,
+      "discountAmount": 0,
+      "taxAmount": 4800,
+      "serviceFeeAmount": 0,
+      "finalAmount": 52800,
+      "totalCostHPP": 20700,
+      "grossProfit": 27300,
+      "paymentMethod": "qris",
+      "amountPaid": 52800,
+      "changeAmount": 0,
+      "status": "completed",
+      "cashierId": "usr-cashier-001",
+      "cashierName": "Siti Rahmawati",
+      "notes": "Bungkus terpisah",
+      "idempotencyKey": "idem-seed-2",
+      "createdAt": "2026-10-24T16:45:58.003Z",
+      "items": [
+        {
+          "id": "19bc71db-8260-4c2c-825a-0eb18e76a9c3",
+          "saleId": "sl-002",
+          "productId": "prd-03",
+          "productName": "Nasi Goreng Spesial Rempah",
+          "quantity": 1,
+          "unitPrice": 28000,
+          "unitCost": 13500,
+          "subtotal": 28000,
+          "costSubtotal": 13500
+        },
+        {
+          "id": "81db6ced-4829-4af0-ad63-ab430b15144c",
+          "saleId": "sl-002",
+          "productId": "prd-02",
+          "productName": "Kopi Susu Gula Aren Spesial",
+          "variantName": "Ukuran Regular (16oz)",
+          "quantity": 1,
+          "unitPrice": 20000,
+          "unitCost": 7200,
+          "subtotal": 20000,
+          "costSubtotal": 7200
+        }
+      ]
+    },
+    {
+      "id": "sl-003",
+      "businessId": "biz-demo-001",
+      "invoiceNumber": "INV-20261024-003",
+      "orderType": "delivery",
+      "customerName": "Ibu Ratna",
+      "subtotal": 94000,
+      "discountAmount": 5000,
+      "taxAmount": 8900,
+      "serviceFeeAmount": 0,
+      "finalAmount": 97900,
+      "totalCostHPP": 38800,
+      "grossProfit": 50200,
+      "paymentMethod": "transfer",
+      "amountPaid": 97900,
+      "changeAmount": 0,
+      "status": "completed",
+      "cashierId": "usr-cashier-001",
+      "cashierName": "Siti Rahmawati",
+      "notes": "Kirim via kurir internal",
+      "idempotencyKey": "idem-seed-3",
+      "createdAt": "2026-10-24T17:15:58.003Z",
+      "items": [
+        {
+          "id": "01384e9d-82cc-4f8a-b2b9-3a9edc84854d",
+          "saleId": "sl-003",
+          "productId": "prd-04",
+          "productName": "Mie Pedas Juara Level 3",
+          "quantity": 2,
+          "unitPrice": 22000,
+          "unitCost": 9800,
+          "subtotal": 44000,
+          "costSubtotal": 19600
+        },
+        {
+          "id": "e9e77866-d329-4418-8b25-1b6812d17418",
+          "saleId": "sl-003",
+          "productId": "prd-02",
+          "productName": "Kopi Susu Gula Aren Spesial",
+          "variantName": "Ukuran Large (22oz)",
+          "quantity": 2,
+          "unitPrice": 25000,
+          "unitCost": 9600,
+          "subtotal": 50000,
+          "costSubtotal": 19200
+        }
+      ]
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-01",
+      "businessId": "biz-demo-001",
+      "category": "utilities",
+      "title": "Tagihan Listrik PLN & Air PDAM",
+      "amount": 850000,
+      "expenseDate": "2026-10-22T17:45:58.003Z",
+      "notes": "Bulan berjalan",
+      "createdBy": "Budi Santoso",
+      "createdAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "exp-02",
+      "businessId": "biz-demo-001",
+      "category": "operational",
+      "title": "Gas LPG 3kg & Minyak Kebersihan",
+      "amount": 220000,
+      "expenseDate": "2026-10-23T17:45:58.003Z",
+      "notes": "Tabung gas cadangan dapur",
+      "createdBy": "Budi Santoso",
+      "createdAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "exp-03",
+      "businessId": "biz-demo-001",
+      "category": "salary",
+      "title": "Uang Makan & Transport Karyawan Mingguan",
+      "amount": 600000,
+      "expenseDate": "2026-10-24T17:45:57.687Z",
+      "notes": "Uang saku operasional",
+      "createdBy": "Budi Santoso",
+      "createdAt": "2026-10-24T17:45:57.687Z"
+    }
+  ],
+  "cashSessions": [
+    {
+      "id": "csh-sess-001",
+      "businessId": "biz-demo-001",
+      "cashierId": "usr-cashier-001",
+      "cashierName": "Siti Rahmawati",
+      "openedAt": "2026-10-24T13:45:58.003Z",
+      "initialCash": 200000,
+      "expectedCash": 274800,
+      "status": "open",
+      "notes": "Sesi Kasir Shift Pagi - Modal Awal Kembalian Rp 200.000"
+    }
+  ],
+  "cashMovements": [],
+  "auditLogs": [
+    {
+      "id": "d55eb0e4-c868-436e-ba0b-c4dcf38b8b2c",
+      "businessId": "biz-demo-001",
+      "userId": "usr-owner-001",
+      "userName": "Budi Santoso",
+      "action": "LOGIN",
+      "details": "Pengguna login sebagai OWNER",
+      "createdAt": "2026-10-24T17:46:13.528Z"
+    },
+    {
+      "id": "2abcff50-f92a-4998-ba56-0a23d8b1dd8b",
+      "businessId": "biz-demo-001",
+      "userId": "usr-owner-001",
+      "userName": "Budi Santoso",
+      "action": "SETUP_BUSINESS",
+      "details": "Membuat profil usaha Warung Rasa Nusantara dan konfigurasi awal",
+      "createdAt": "2026-10-24T17:45:57.687Z"
+    },
+    {
+      "id": "5dfc443b-289c-41a8-a023-966e9553cd85",
+      "businessId": "biz-demo-001",
+      "userId": "usr-cashier-001",
+      "userName": "Siti Rahmawati",
+      "action": "OPEN_CASH_DRAWER",
+      "details": "Membuka shift kasir dengan uang modal Rp 200.000",
+      "createdAt": "2026-10-24T13:45:58.003Z"
+    }
+  ]
+}
